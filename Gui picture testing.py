@@ -31,6 +31,33 @@ dT = 0 # Dealer's Total
 
 chips = tk.IntVar # Total money player put in
 
+
+
+image_path_for_2 = "Two.png"
+image_path_for_dealer = "Two.png"
+
+# Create PhotoImage objects directly for the card values 2 and dealer
+tk_img_for_2 = tk.PhotoImage(file=image_path_for_2)
+tk_img_for_dealer = tk.PhotoImage(file=image_path_for_dealer)
+
+width, height = 50, 75
+
+# Resize images
+tk_img_for_2 = tk_img_for_2.subsample(int(tk_img_for_2.width() / width), int(tk_img_for_2.height() / height))
+tk_img_for_dealer = tk_img_for_dealer.subsample(int(tk_img_for_dealer.width() / width), int(tk_img_for_dealer.height() / height))
+
+# Create Label widgets to display the images for the card values 2 and dealer
+img_label_for_2 = tk.Label(bljFrm, image=tk_img_for_2, bg='#0c3b16')
+img_label_for_2.image = tk_img_for_2  # Keep a reference to the image to prevent it from being garbage collected
+
+
+img_label_for_dealer = tk.Label(bljFrm, image=tk_img_for_dealer, bg='#0c3b16')
+img_label_for_dealer.image = tk_img_for_dealer  # Keep a reference to the image to prevent it from being garbage collected
+
+
+
+
+
 def gC(): # gets 1 card and puts it into the cards list
     global cards
     global cT
@@ -48,6 +75,9 @@ def gC(): # gets 1 card and puts it into the cards list
             cT += 11
         else:
             cT += 1
+    if cFace == '2':
+        img_label_for_2.place(x=310, y=150)
+
 
 def chipC(): # Fixes the bug where you need to enter a number in the chips box
     global chips
@@ -93,7 +123,8 @@ def dlrCard(): # Gives dealer 1 card and puts in hand
             dT += 11
         else:
             dT += 1
-  
+    if cFace == '2':
+        img_label_for_dealer.place(x=310, y=10)
         
 def stand(): # Ends Round
     global cT
@@ -248,36 +279,7 @@ betRul = tk.Label(bljFrm, text='Min Bet 10c', bg='#0c3b16', fg='White')
 hitBtn.config(state=tk.DISABLED)
 
 
-image_path = "Two.png"
 
-# Create a PhotoImage object directly
-tk_img = tk.PhotoImage(file=image_path)
-
-width, height = 50, 75
-tk_img = tk_img.subsample(int(tk_img.width() / width), int(tk_img.height() / height))
-
-# Create a Label widget to display the image
-img_label = tk.Label(bljFrm, image=tk_img, bg='#0c3b16')
-img_label.image = tk_img  # Keep a reference to the image to prevent it from being garbage collected
-
-# Place the image label on the frame
-img_label.place(x=310, y=10)
-
-
-image_path = "Three.png"
-
-# Create a PhotoImage object directly
-tk_img = tk.PhotoImage(file=image_path)
-
-width, height = 50, 75
-tk_img = tk_img.subsample(int(tk_img.width() / width), int(tk_img.height() / height))
-
-# Create a Label widget to display the image
-img_label = tk.Label(bljFrm, image=tk_img, bg='#0c3b16')
-img_label.image = tk_img  # Keep a reference to the image to prevent it from being garbage collected
-
-# Place the image label on the frame
-img_label.place(x=390, y=10)
 
 
 # Label and button placements (Visuals are all temporary right now)
