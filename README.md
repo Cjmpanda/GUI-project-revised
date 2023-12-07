@@ -68,7 +68,7 @@ Steps to step on how to play:
    Tie: You lose nothing
 
 7. Then you can press the reset button to play again and repeat through
-   steps 2-6 until you run out of chips.
+   steps 2-6 until you fall below 10 chips which signifies a loss.
 
 
 '''
