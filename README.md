@@ -22,7 +22,7 @@ How to install our game:
 6. Put all of the png files in the "Assets" folder
 7. After put the python file into the BlackJack folder
 8. Then put the "Assets" folder in the BlackJack folder
-9. Then open the python file
+9. Then open the python file in the folder
 
 What is your project about - Game, application, etc.
 Our project is a game that depicts the game of Black Jack. Allowing
