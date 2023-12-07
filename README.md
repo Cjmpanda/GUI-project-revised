@@ -13,7 +13,7 @@ Kenai Lozada: GUI designer and Documenter
 Connor Moy: GUI designer and Core programmer
 
 
-We downloaded Pillow to make the program opperate
+
 How to install our game:
 1. Download our python file
 2. Download all the png images of cards we have
