@@ -15,14 +15,9 @@ Connor Moy: GUI designer and Core programmer
 
 
 How to install our game:
-1. Download our python file
-2. Download all the png images of cards we have
-4. Make two folders in your files tab
-5. Name one "Assets" and the other something related to BlackJack
-6. Put all of the png files in the "Assets" folder
-7. After put the python file into the BlackJack folder
-8. Then put the "Assets" folder in the BlackJack folder
-9. Then open the python file in the folder
+1. Download our zip file
+2. Extract the zip file
+3. Then open the python file in the folder in you Python Idle
 
 What is your project about - Game, application, etc.
 Our project is a game that depicts the game of Black Jack. Allowing
@@ -68,7 +63,8 @@ Steps to step on how to play:
    Tie: You lose nothing
 
 7. Then you can press the reset button to play again and repeat through
-   steps 2-6 until you fall below 10 chips which signifies a loss.
+   steps 2-6 until you fall below 10 chips which signifies a loss or you
+   exceed 1 million chips.
 
 
 '''
