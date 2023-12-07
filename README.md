@@ -1,7 +1,28 @@
-# GUI-project-revised
+# GUI-project
 '''
 CS1010-GUI-Project
+Section 11 group 3
 
+Who in your team will be doing what? GUI designer, Documentation, leadership, Core programming, etc
+Rigo Castro: GUI designer and Core programmer
+
+Alan Garrido: GUI designer and Documenter
+
+Kenai Lozada: GUI designer and Documenter
+
+Connor Moy: GUI designer and Core programmer
+
+
+We downloaded Pillow to make the program opperate
+How to install our game:
+1. Download our python file
+2. Download all the png images of cards we have
+4. Make two folders in your files tab
+5. Name one "Assets" and the other something related to BlackJack
+6. Put all of the png files in the "Assets" folder
+7. After put the python file into the BlackJack folder
+8. Then put the "Assets" folder in the BlackJack folder
+9. Then open the python file
 
 What is your project about - Game, application, etc.
 Our project is a game that depicts the game of Black Jack. Allowing
@@ -50,13 +71,4 @@ Steps to step on how to play:
    steps 2-6 until you run out of chips.
 
 
-
-Who in your team will be doing what? GUI designer, Documentation, leadership, Core programming, etc
-Rigo Castro: GUI designer and Core programmer
-
-Alan Garrido: GUI designer and Documenter
-
-Kenai Lozada: GUI designer and Documenter
-
-Connor Moy: GUI designer and Core programmer
 '''
